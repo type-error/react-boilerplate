@@ -1,11 +1,22 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 import Routing from './Routing'
 
 const App: React.FC = () => {
   return (
     <>
-      <h1>Hello</h1>
+      <div>
+        <ul>
+          <li>
+            <Link to="/home">Home</Link>
+          </li>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+        </ul>
+      </div>
 
       <Routing />
     </>

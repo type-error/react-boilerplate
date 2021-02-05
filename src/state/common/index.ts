@@ -1,4 +1,4 @@
-import commonState, { ITitle } from './common'
+import commonState from './common'
 
 export default commonState
 export * from './common'

@@ -7,8 +7,8 @@ import AuthedRouteContainer from 'container/AuthedRouteContainer'
 const Routing: React.FC = () => {
   return (
     <Switch>
-      <Route exact path="/home" component={HomeContainer} />
-      {/* <AuthedRouteContainer exact path="/auth" component={} /> */}
+      {/* <Route exact path="/home" component={HomeContainer} /> */}
+      <AuthedRouteContainer exact path="/home" component={HomeContainer} />
       <Redirect from="*" to="/login" />
     </Switch>
   )

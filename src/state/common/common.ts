@@ -1,12 +1,16 @@
 import { atom } from 'recoil'
 
-export interface ITitle {
-  text: string
+import { FrontVersion } from './model'
+import { BackVersion } from './model'
+
+export interface ICommon {
+  frontVersion?: FrontVersion
+  backVersion?: BackVersion
 }
 
-const commonState = atom<ITitle>({
+const commonState = atom<ICommon>({
   key: 'commonState',
-  default: { text: 'Hello, World!' },
+  default: {},
 })
 
 export default commonState
