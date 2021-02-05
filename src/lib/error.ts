@@ -22,6 +22,10 @@ export class CustomError {
 
       this.trxId = response.headers['x-tid'] || 'undefined'
       this.response = response
+    } else {
+      this.isHttpError = false
+      this.statusCode = 0
+      this.url = ''
     }
   }
 }
